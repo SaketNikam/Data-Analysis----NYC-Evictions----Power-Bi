@@ -1,0 +1,9 @@
+City = Evictions_Final[BOROUGH]
+
+Count = COUNT(Evictions_Final[Court Index Number])
+
+Count of Ejectments = COUNT(Evictions_Final[Ejectment])
+
+Number of Marshals = DISTINCTCOUNT(Evictions_Final[Marshal Full Name])
+
+Status = IF( DATEVALUE(Evictions_Final[Executed Date])<DATE(2021,10,29),"Executed","Scheduled")
